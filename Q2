@@ -1,8 +1,20 @@
-#income tax 
-g_inc=int(input('Enter the gross income:'))
-sded=10000
-depen=int(input('Enter Your No. of Depenedents:'))
-depDeduc=3000
-formula=g_inc-sded-(depen*depDeduc)
-tax1=formula*0.2
-print("the net income tax payable:",tax1)
+# Data input from the user
+Gross_Income = input("Enter your Gross Income here")
+Std_deduction = "10000"
+Depd_deduction = "3000"
+No_of_dependents = input("Enter no. of dependents here")
+Gross_Income = int(Gross_Income)
+Std_deduction = int(Std_deduction)
+Depd_deduction = int(Depd_deduction)
+No_of_dependents = int(No_of_dependents)
+
+# Calculation of Taxable Income
+Taxable_income = Gross_Income - Std_deduction - (Depd_deduction * No_of_dependents)
+
+
+# Tax Calculation
+Tax_rate = "0.2"
+Tax_rate = float(Tax_rate)
+Tax = Taxable_income * Tax_rate
+print("Taxable income is", Taxable_income)
+print("Tax amount to be paid is $", Tax)
