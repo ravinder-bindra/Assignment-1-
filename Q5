@@ -1,7 +1,17 @@
-#sine and cosine values
+# Importing Maths Library to our code
 import math
-for i in range(0,345,15):
-    print('The sine value of ',i,':',round(math.sin(i),4))
-    print('The cosine value of ',i,':',round(math.cos(i),4))
+for k in range(0,360,15):
+# To get value of sin of k degrees rounded to 4 decimal places    
+    sine = round(math.sin(math.radians(k)),4)
+# To get value of cos of k degrees rounded to 4 decimal places
+    cosine = round(math.cos(math.radians(k)),4)
+# Printing the sin(k)= ,cos(k)=
+    print("sin("+str(k)+"):",sine,",","cos("+str(k)+"):",cosine)
+
+
     
+    
+    
+
+
 
