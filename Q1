@@ -1,6 +1,9 @@
-# avg of no
-na=int(input('Enter 1 number:'))
-nb=int(input('Enter 2 number:'))
-nc=int(input('Enter 3 number:'))
-a=(na+nb+nc)/3
-print('Average of three nos is',a)
+# finding average of three nos. given by user
+First_no = input("enter first number")
+Second_no = input("enter second number")
+Third_no = input("enter third number")
+First_no = int(First_no)
+Second_no = int(Second_no)
+Third_no = int(Third_no)
+average = (First_no+Second_no+Third_no)/2
+print("The average of three numbers enterd is", average)
